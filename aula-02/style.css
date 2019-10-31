@@ -1,0 +1,29 @@
+nav
+{
+    background-color:black;
+}
+
+header
+{
+    background-color: purple;
+}
+
+h1
+{
+    color: violet;
+    text-transform: uppercase;
+}
+
+ul
+{
+    list-style:none;
+}
+
+li
+{
+    display: inline;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(114, 235, 174);
+    
+}
+
