@@ -1,0 +1,133 @@
+body
+{
+    display: grid;
+    grid-template-areas: 'navbar'
+                        'baner'
+                        'main'
+                        'section'
+                        'contact'
+                        'footer';
+    grid-template-columns: 100%;
+    margin: 0;
+}
+
+nav
+{
+    grid-area: 'navbar';
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 85px;
+    justify-content: space-between;
+}
+
+nav a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    color: black;
+}
+
+nav img
+{
+    width: 85px;
+}
+
+nav div:nth-child(2)
+{
+    display: none;
+} 
+
+nav div:nth-child(3)
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400%;
+    height: 20%;
+
+}
+
+header
+{
+    grid-area: 'banner';
+    background-image: url(../imagens/fofo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+}
+
+
+section
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cabecalho
+{
+    grid-area: main;
+}
+
+#cabecalho h1, #cabecalho h2
+{
+    text-align: center;
+    color: rgb(196, 98, 241);
+}
+
+.titulo
+{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family:'Liu Jian Mao Cao', cursive;
+}
+
+.subtitulo
+{
+    width: 350px;
+}
+
+input:focus
+{
+    color: rgb(196, 94, 191);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* responsivo*/
+@media (max-width: 800px)
+{
+    nav div:nth-child(2)
+    {
+        display: inline-block;
+        width: 50px;
+    }
+    nav div:nth-child(3)
+    {
+        display: none;
+    }
+
+    .icon-menu
+    {
+        width: 66%;
+    }
+
+    header
+    {
+        background-image: url(../imagens/filhote.jpg);
+        height: 300px;
+    }
+}
